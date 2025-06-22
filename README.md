@@ -1,6 +1,8 @@
 # Fake_News_Detector
 A machine learning project to classify news as real or fake using trained BERT model. Includes real-time news scraping (Al Jazeera RSS) using feedparser and BeautifulSoup, TF-IDF vectorization, and performance evaluation with precision
 
+
+
 # 📰 Fake News Detection Web App
 
 A web-based application that uses a fine-tuned BERT model to classify news articles or headlines as **Real** or **Fake**. Built using Python, Flask, Hugging Face Transformers, and modern NLP techniques.
@@ -104,14 +106,15 @@ Go to `http://127.0.0.1:5000/` in your browser to interact with the app.
 
 ## 🙌 Team
 
-Debjit Ghosal(Team Leader)
-Vanshi Gathani
-Heer Gandhi
-Tanishq Dutta
+* **Debjit Ghosal** *(Developer & Presenter)*
+* **Vanshi Gathani**
+* **Heer Gandhi**
+* **Tanishq Dutta**
 
 ### 🧑‍🏫 Mentors
-Dr. Nikita Mishra
-Abhijeet Salunke
+
+* **Dr. Nikita Mishra**
+* **Abhijeet Salunke**
 
 ---
 
@@ -134,9 +137,3 @@ This project is for academic use. Feel free to fork, modify, and improve it for 
 Explore the code: [https://github.com/debjitghosal/Fake\_News\_Detector](https://github.com/debjitghosal/Fake_News_Detector)
 
 ```
-
----
-
-Let me know if you want a separate section for **Docker deployment**, **API usage**, or **Google Colab setup**.
-```
-
