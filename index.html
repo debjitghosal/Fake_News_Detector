@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: radial-gradient(circle, #d0e6ff, #89aaf2, #1a365d);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            background: #f0f8ff;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            border: 3px solid #2c5282;
+            margin: 5px;
+        }
+
+        h1 {
+            color: #1a365d;
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #4a5568;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        /* Text area styling with margin and a light blue background */
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 12px;
+            margin: 5px;
+            border-radius: 8px;
+            border: 2px solid #90cdf4;
+            background-color: #f0f8ff;
+            resize: vertical;
+            font-size: 1em;
+            color: #2c5282;
+            outline: none;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* Placeholder text color */
+        textarea::placeholder {
+            color: #87cefa; /* Light blue color */
+            text-align: left; /* Align placeholder text to the left */
+        }
+
+        /* Text area focus effect */
+        textarea:focus {
+            background-color: #ffffff;
+            box-shadow: 0 0 8px rgba(66, 153, 225, 0.4);
+        }
+
+        /* Button styling with a contrasting blue gradient */
+        button {
+            background: linear-gradient(145deg, #2b6cb0, #2c5282);
+            color: #ffffff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            margin-top: 15px;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        /* Button hover and active effects */
+        button:hover {
+            background: linear-gradient(145deg, #2c5282, #2b6cb0);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Result styling */
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2d3748;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fake News Detector</h1>
+        <p>Enter the news text below to check if it's real or fake.</p>
+        <textarea id="news-input" placeholder="Paste the news text here..."></textarea>
+        <button onclick="checkFakeNews()">Check</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function checkFakeNews() {
+            const newsText = document.getElementById('news-input').value;
+            const resultDiv = document.getElementById('result');
+
+            if (!newsText.trim()) {
+                resultDiv.innerHTML = "Please enter some text to analyze.";
+                resultDiv.style.color = '#2d3748';
+                return;
+            }
+
+            // Simulating fake news detection result for demonstration purposes
+            const isFake = Math.random() < 0.5;
+
+            if (isFake) {
+                resultDiv.innerHTML = "🚨 The news is likely <b>Fake</b>!";
+                resultDiv.style.color = '#e53e3e';
+            } else {
+                resultDiv.innerHTML = "✅ The news is likely <b>Real</b>!";
+                resultDiv.style.color = '#48bb78';
+            }
+        }
+    </script>
+</body>
+</html>
