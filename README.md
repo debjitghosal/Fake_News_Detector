@@ -130,10 +130,6 @@ Go to `http://127.0.0.1:5000/` in your browser to interact with the app.
 
 This project is for academic use. Feel free to fork, modify, and improve it for educational or research purposes.
 
----
-
 ## 🔗 GitHub
 
 Explore the code: [https://github.com/debjitghosal/Fake\_News\_Detector](https://github.com/debjitghosal/Fake_News_Detector)
-
-```
