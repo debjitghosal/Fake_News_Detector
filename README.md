@@ -106,7 +106,7 @@ Go to `http://127.0.0.1:5000/` in your browser to interact with the app.
 
 ## 🙌 Team
 
-* **Debjit Ghosal** *(Developer & Presenter)*
+* **Debjit Ghosal** *(Team Leader)*
 * **Vanshi Gathani**
 * **Heer Gandhi**
 * **Tanishq Dutta**
